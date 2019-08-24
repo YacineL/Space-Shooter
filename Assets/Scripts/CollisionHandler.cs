@@ -12,6 +12,8 @@ public class CollisionHandler : MonoBehaviour
     void OnTriggerEnter(Collider other)
     {
         StartDeathSequence();
+        deathFX.SetActive(true);
+        Invoke("ReloadScene", levelLoadDelay);
     }
 
     private void StartDeathSequence()
@@ -19,9 +21,9 @@ public class CollisionHandler : MonoBehaviour
         print("Player's dying");
         SendMessage("OnPlayerDeath");
     }
-
-    private void OnPlayerDeath()
+    private void ReloadScene()
     {
-        print("Control's frozen");
+        SceneManager.LoadScene(1);
     }
+
 }
