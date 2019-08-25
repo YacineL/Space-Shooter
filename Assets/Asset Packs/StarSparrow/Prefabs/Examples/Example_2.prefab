@@ -112,7 +112,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1000014290615944}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 3.5271392, y: 0.79238474, z: 3.2506356}
@@ -165,7 +165,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1792683451676054511
 Transform:
   m_ObjectHideFlags: 0
@@ -5064,6 +5064,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bullets Left
       objectReference: {fileID: 0}
+    - target: {fileID: 6420891484264345170, guid: c129a22be2c4c0b44b8d31a485d16b33,
+        type: 3}
+      propertyPath: CollisionModule.minKillSpeed
+      value: 500
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c129a22be2c4c0b44b8d31a485d16b33, type: 3}
 --- !u!4 &6420891484738216078 stripped
@@ -5138,6 +5143,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Bullets Right
+      objectReference: {fileID: 0}
+    - target: {fileID: 6420891484264345170, guid: c129a22be2c4c0b44b8d31a485d16b33,
+        type: 3}
+      propertyPath: CollisionModule.minKillSpeed
+      value: 500
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c129a22be2c4c0b44b8d31a485d16b33, type: 3}

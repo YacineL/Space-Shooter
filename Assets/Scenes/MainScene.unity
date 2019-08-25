@@ -139,6 +139,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d9a50561961de234785dfafe959a287e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  deathFX: {fileID: 9103847426830095005, guid: f36af30afd080304f8004ad78d0c51ab, type: 3}
 --- !u!1001 &48273047
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -223,17 +224,17 @@ PrefabInstance:
     - target: {fileID: 9103847426830095005, guid: f36af30afd080304f8004ad78d0c51ab,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9103847426830095001, guid: f36af30afd080304f8004ad78d0c51ab,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 774.2
+      value: 769.36
       objectReference: {fileID: 0}
     - target: {fileID: 9103847426830095001, guid: f36af30afd080304f8004ad78d0c51ab,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 60.554104
+      value: 62.47
       objectReference: {fileID: 0}
     - target: {fileID: 9103847426830095001, guid: f36af30afd080304f8004ad78d0c51ab,
         type: 3}
@@ -279,6 +280,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9103847426830095001, guid: f36af30afd080304f8004ad78d0c51ab,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9103847426830095001, guid: f36af30afd080304f8004ad78d0c51ab,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9103847426830095001, guid: f36af30afd080304f8004ad78d0c51ab,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9103847426830095002, guid: f36af30afd080304f8004ad78d0c51ab,
         type: 3}
@@ -423,6 +439,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d9a50561961de234785dfafe959a287e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  deathFX: {fileID: 9103847426830095005, guid: f36af30afd080304f8004ad78d0c51ab, type: 3}
 --- !u!1001 &191708181
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -510,6 +527,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d9a50561961de234785dfafe959a287e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  deathFX: {fileID: 9103847426830095005, guid: f36af30afd080304f8004ad78d0c51ab, type: 3}
 --- !u!1 &362938998 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1249553951781956, guid: 6a7580c2fbbc4fe41947b58d9f7d3f2b,
@@ -528,6 +546,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d9a50561961de234785dfafe959a287e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  deathFX: {fileID: 9103847426830095005, guid: f36af30afd080304f8004ad78d0c51ab, type: 3}
 --- !u!1001 &405599245
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1245,6 +1264,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d9a50561961de234785dfafe959a287e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  deathFX: {fileID: 9103847426830095005, guid: f36af30afd080304f8004ad78d0c51ab, type: 3}
 --- !u!1 &1168810351
 GameObject:
   m_ObjectHideFlags: 0
@@ -1293,6 +1313,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d9a50561961de234785dfafe959a287e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  deathFX: {fileID: 9103847426830095005, guid: f36af30afd080304f8004ad78d0c51ab, type: 3}
 --- !u!1 &1354630470
 GameObject:
   m_ObjectHideFlags: 0
@@ -1719,6 +1740,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d9a50561961de234785dfafe959a287e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  deathFX: {fileID: 9103847426830095005, guid: f36af30afd080304f8004ad78d0c51ab, type: 3}
 --- !u!1 &2042456653 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1249553951781956, guid: 6a7580c2fbbc4fe41947b58d9f7d3f2b,
@@ -1737,6 +1759,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d9a50561961de234785dfafe959a287e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  deathFX: {fileID: 9103847426830095005, guid: f36af30afd080304f8004ad78d0c51ab, type: 3}
 --- !u!1001 &2881190560897569346
 PrefabInstance:
   m_ObjectHideFlags: 0
