@@ -10,6 +10,7 @@ public class PlayerController : MonoBehaviour
     [Tooltip("In ms^-1")] [SerializeField] float controlSpeed = 4f;
     [Tooltip("In m")] [SerializeField] float xRange = 5f;
     [Tooltip("In m")] [SerializeField] float yRange = 5f;
+    [SerializeField] GameObject[] guns;
 
     [Header("Screen-position Based")]
     [SerializeField] float positionPitchFactor = -5f;
@@ -30,8 +31,11 @@ public class PlayerController : MonoBehaviour
         {
             ProcessTranslation();
             ProcessRotation();
+            ProcessFiring();
         }
     }
+
+    
 
     private void ProcessRotation()
     {
@@ -62,10 +66,40 @@ public class PlayerController : MonoBehaviour
 
         transform.localPosition = new Vector3(clampedXPos, clampedYPos, transform.localPosition.z);
     }
-    
+
+    private void ProcessFiring()
+    {
+        if (CrossPlatformInputManager.GetButton("Jump"))
+        {
+            ActivateGuns();
+        }
+        else
+        {
+            DeactivateGuns();
+        }
+    }
+
+   
+
     void OnPlayerDeath()
     {
         print("Control's frozen");
         isControlEnabled = false;
+    }
+
+    private void ActivateGuns()
+    {
+        foreach (GameObject gun in guns)
+        {
+            gun.SetActive(true);
+        }
+    }
+
+    private void DeactivateGuns()
+    {
+        foreach (GameObject gun in guns)
+        {
+            gun.SetActive(false);
+        }
     }
 }

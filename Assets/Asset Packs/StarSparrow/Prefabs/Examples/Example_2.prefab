@@ -100,7 +100,10 @@ MonoBehaviour:
   controlSpeed: 4
   xRange: 6
   yRange: 3.83
-  positionPitchFactor: -5
+  guns:
+  - {fileID: 566112523}
+  - {fileID: 6420891484738216077}
+  positionPitchFactor: -7
   positionYawFactor: 6
   controlPitchFactor: -13.53
   controlRollFactor: -30
@@ -5004,6 +5007,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 4000011839006638}
     m_Modifications:
+    - target: {fileID: 6420891484264345183, guid: c129a22be2c4c0b44b8d31a485d16b33,
+        type: 3}
+      propertyPath: m_Name
+      value: Bullets Left
+      objectReference: {fileID: 0}
+    - target: {fileID: 6420891484264345183, guid: c129a22be2c4c0b44b8d31a485d16b33,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6420891484264345180, guid: c129a22be2c4c0b44b8d31a485d16b33,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5059,18 +5072,39 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6420891484264345183, guid: c129a22be2c4c0b44b8d31a485d16b33,
+    - target: {fileID: 6420891484264345170, guid: c129a22be2c4c0b44b8d31a485d16b33,
         type: 3}
-      propertyPath: m_Name
-      value: Bullets Left
+      propertyPath: simulationSpeed
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 6420891484264345170, guid: c129a22be2c4c0b44b8d31a485d16b33,
+        type: 3}
+      propertyPath: InitialModule.startLifetime.scalar
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6420891484264345170, guid: c129a22be2c4c0b44b8d31a485d16b33,
+        type: 3}
+      propertyPath: InitialModule.startColor.maxColor.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6420891484264345170, guid: c129a22be2c4c0b44b8d31a485d16b33,
+        type: 3}
+      propertyPath: EmissionModule.rateOverTime.scalar
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 6420891484264345170, guid: c129a22be2c4c0b44b8d31a485d16b33,
         type: 3}
       propertyPath: CollisionModule.minKillSpeed
-      value: 500
+      value: 200
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c129a22be2c4c0b44b8d31a485d16b33, type: 3}
+--- !u!1 &6420891484738216077 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6420891484264345183, guid: c129a22be2c4c0b44b8d31a485d16b33,
+    type: 3}
+  m_PrefabInstance: {fileID: 634310354}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &6420891484738216078 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6420891484264345180, guid: c129a22be2c4c0b44b8d31a485d16b33,
@@ -5084,6 +5118,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 4000011839006638}
     m_Modifications:
+    - target: {fileID: 6420891484264345183, guid: c129a22be2c4c0b44b8d31a485d16b33,
+        type: 3}
+      propertyPath: m_Name
+      value: Bullets Right
+      objectReference: {fileID: 0}
+    - target: {fileID: 6420891484264345183, guid: c129a22be2c4c0b44b8d31a485d16b33,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6420891484264345180, guid: c129a22be2c4c0b44b8d31a485d16b33,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5139,18 +5183,39 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6420891484264345183, guid: c129a22be2c4c0b44b8d31a485d16b33,
+    - target: {fileID: 6420891484264345170, guid: c129a22be2c4c0b44b8d31a485d16b33,
         type: 3}
-      propertyPath: m_Name
-      value: Bullets Right
+      propertyPath: simulationSpeed
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 6420891484264345170, guid: c129a22be2c4c0b44b8d31a485d16b33,
+        type: 3}
+      propertyPath: InitialModule.startLifetime.scalar
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6420891484264345170, guid: c129a22be2c4c0b44b8d31a485d16b33,
+        type: 3}
+      propertyPath: InitialModule.startColor.maxColor.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6420891484264345170, guid: c129a22be2c4c0b44b8d31a485d16b33,
+        type: 3}
+      propertyPath: EmissionModule.rateOverTime.scalar
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 6420891484264345170, guid: c129a22be2c4c0b44b8d31a485d16b33,
         type: 3}
       propertyPath: CollisionModule.minKillSpeed
-      value: 500
+      value: 200
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c129a22be2c4c0b44b8d31a485d16b33, type: 3}
+--- !u!1 &566112523 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6420891484264345183, guid: c129a22be2c4c0b44b8d31a485d16b33,
+    type: 3}
+  m_PrefabInstance: {fileID: 6420891484808421204}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &566112520 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6420891484264345180, guid: c129a22be2c4c0b44b8d31a485d16b33,
