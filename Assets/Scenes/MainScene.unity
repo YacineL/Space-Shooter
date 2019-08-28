@@ -781,6 +781,20 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1316537522436529194, guid: 4b73230d9aab5cb4ebb08b31f8e23593,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 566112518, guid: 4b73230d9aab5cb4ebb08b31f8e23593, type: 3}
+      propertyPath: EmissionModule.rateOverTime.scalar
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 6420891484738216064, guid: 4b73230d9aab5cb4ebb08b31f8e23593,
+        type: 3}
+      propertyPath: EmissionModule.rateOverTime.scalar
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4b73230d9aab5cb4ebb08b31f8e23593, type: 3}
 --- !u!4 &697030641 stripped
@@ -1450,6 +1464,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Music Player
       objectReference: {fileID: 0}
+    - target: {fileID: 3480290807439408570, guid: 80c0ac8efc9b94c4680047e5f496c232,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3480290807439408568, guid: 80c0ac8efc9b94c4680047e5f496c232,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1508,7 +1527,7 @@ PrefabInstance:
     - target: {fileID: 3480290807439408571, guid: 80c0ac8efc9b94c4680047e5f496c232,
         type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 80c0ac8efc9b94c4680047e5f496c232, type: 3}
