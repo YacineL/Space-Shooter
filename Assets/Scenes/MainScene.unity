@@ -1181,7 +1181,7 @@ MonoBehaviour:
   deathFX: {fileID: 9103847426830095005, guid: f36af30afd080304f8004ad78d0c51ab, type: 3}
   parent: {fileID: 446546412}
   scorePerHit: 25
-  hits: 30
+  hits: 15
 --- !u!1001 &384134931
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1828,7 +1828,7 @@ MonoBehaviour:
   deathFX: {fileID: 9103847426830095005, guid: f36af30afd080304f8004ad78d0c51ab, type: 3}
   parent: {fileID: 446546412}
   scorePerHit: 25
-  hits: 30
+  hits: 15
 --- !u!1001 &599138315
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1965,6 +1965,10 @@ PrefabInstance:
         type: 3}
       propertyPath: EmissionModule.rateOverTime.scalar
       value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 725075264, guid: 4b73230d9aab5cb4ebb08b31f8e23593, type: 3}
+      propertyPath: controlSpeed
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4b73230d9aab5cb4ebb08b31f8e23593, type: 3}
@@ -2380,7 +2384,7 @@ MonoBehaviour:
   deathFX: {fileID: 9103847426830095005, guid: f36af30afd080304f8004ad78d0c51ab, type: 3}
   parent: {fileID: 446546412}
   scorePerHit: 25
-  hits: 30
+  hits: 15
 --- !u!1 &845747729 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1249553951781956, guid: 6a7580c2fbbc4fe41947b58d9f7d3f2b,
@@ -4812,7 +4816,7 @@ MonoBehaviour:
   deathFX: {fileID: 9103847426830095005, guid: f36af30afd080304f8004ad78d0c51ab, type: 3}
   parent: {fileID: 446546412}
   scorePerHit: 25
-  hits: 30
+  hits: 15
 --- !u!1 &1744055642 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1090395654553690, guid: e14d375f5a36551479fc2f172353b1ba,
@@ -5716,7 +5720,7 @@ MonoBehaviour:
   deathFX: {fileID: 9103847426830095005, guid: f36af30afd080304f8004ad78d0c51ab, type: 3}
   parent: {fileID: 446546412}
   scorePerHit: 25
-  hits: 30
+  hits: 15
 --- !u!1001 &2881190560897569346
 PrefabInstance:
   m_ObjectHideFlags: 0
