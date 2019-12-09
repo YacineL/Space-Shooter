@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Playables;
 using UnityStandardAssets.CrossPlatformInput;
 
 public class PlayerController : MonoBehaviour
@@ -20,22 +21,53 @@ public class PlayerController : MonoBehaviour
     [SerializeField] float controlPitchFactor = -20f;
     [SerializeField] float controlRollFactor = -20f;
 
-    float xThrow, yThrow;
-    bool isControlEnabled = true; 
+    [Header("Pause / Game Over screen ")]
+    [SerializeField] GameObject gameOverCanvas;
+    [SerializeField] PlayableDirector playableDirector;
 
+    float xThrow, yThrow;
+    bool isControlEnabled = true;
+    bool isPaused = false;
+
+    private void Start()
+    {
+        playableDirector.Play();
+    }
 
     // Update is called once per frame
     void Update()
     {
         if (isControlEnabled)
         {
+            ProcessPausing();
             ProcessTranslation();
             ProcessRotation();
             ProcessFiring();
         }
     }
 
-    
+    private void ProcessPausing()
+    {
+        if(Input.GetKeyDown(KeyCode.Escape))
+        {
+            if(!isPaused || playableDirector.time == playableDirector.duration)
+            {
+                gameOverCanvas.SetActive(true);
+                //Time.timeScale = 0;
+                isPaused = true;
+                //AudioListener.pause = true;
+                playableDirector.playableGraph.GetRootPlayable(0).SetSpeed(0);
+            }
+            else 
+            {
+                gameOverCanvas.SetActive(false);
+                //Time.timeScale = 1;
+                isPaused = false;
+                //AudioListener.pause = false;
+                playableDirector.playableGraph.GetRootPlayable(0).SetSpeed(1);
+            }
+        }
+    }
 
     private void ProcessRotation()
     {
